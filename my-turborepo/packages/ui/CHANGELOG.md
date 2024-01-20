@@ -1,5 +1,11 @@
 # @swapnilsrivastava/ui
 
+## 1.0.1
+
+### Patch Changes
+
+- ae60021: patch version of the packages
+
 ## 1.0.0
 
 ### Major Changes
