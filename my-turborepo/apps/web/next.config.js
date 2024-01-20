@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  transpilePackages: ["@swapnilsrivastava/ui"],
+  transpilePackages: ["@swapnilsrivastava/ui, @swapnilsrivastava/library"],
 };
