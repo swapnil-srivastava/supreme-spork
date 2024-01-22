@@ -11,8 +11,9 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           cache: npm
+          cache-dependency-path: my-turborepo/package-lock.json
 
       - run: cd my-turborepo && npm ci
       - run: cd my-turborepo && npm run lint && npm run build
