@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm run lint && npm run build
+      - run: cd my-turborepo && npm ci
+      - run: cd my-turborepo && npm run lint && npm run build
