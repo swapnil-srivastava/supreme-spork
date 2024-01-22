@@ -13,7 +13,6 @@ jobs:
         with:
           node-version: 18
           cache: npm
-          cache-dependency-path: my-turborepo/package-lock.json
 
-      - run: cd my-turborepo && npm ci
-      - run: cd my-turborepo && npm run lint && npm run build
+      - run: npm ci
+      - run: npm run lint && npm run build

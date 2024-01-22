@@ -22,14 +22,13 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org/
           cache: npm
-          cache-dependency-path: my-turborepo/package-lock.json
 
-      - run: cd my-turborepo && npm install
+      - run: npm install
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: cd my-turborepo && npm run publish-packages
+          publish: npm run publish-packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
