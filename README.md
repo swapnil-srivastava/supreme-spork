@@ -37,8 +37,7 @@ This Turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-pnpm build
+npm run build
 ```
 
 ### Develop
@@ -46,18 +45,34 @@ pnpm build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-pnpm dev
+npm run dev
 ```
 
-### Remote Caching
+### Deploy
+
+To deploy all apps and packages, run the following command:
+
+Github Workflow Actions are deploying the packages
+Vercel is deploying the applications (apps and docs) at the moment. 
+
+### Version
+
+Version of the packages which are deployed to NPM Registry is done through changeset
+
+```
+npx changeset
+```
+Select which type of version you would want to upgrade(e.g. major (1.0.0), minor (0.2.0), patch(0.0.2) ) and on which package (e.g. @swapnilsrivastava/ui).
+
+Once the above operation is performed by the contributer commit the file and push you changes to the branch and merge request is created. Github Action is programmed to create the pull request and remove the changeset *.md file and upgrade each package and add the change log for future references.
+
+### Remote Caching [NOT Activated for this project]
 
 Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
 
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
 npx turbo login
 ```
 
