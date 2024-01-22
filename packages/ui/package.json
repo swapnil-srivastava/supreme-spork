@@ -1,6 +1,6 @@
 {
   "name": "@swapnilsrivastava/ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "exports": {
     "./button": "./src/button.tsx",

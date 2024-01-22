@@ -1,5 +1,11 @@
 # @swapnilsrivastava/typescript-config
 
+## 1.0.3
+
+### Patch Changes
+
+- 3583aa7: updating the patch for the whole process to be updated
+
 ## 1.0.2
 
 ### Patch Changes
