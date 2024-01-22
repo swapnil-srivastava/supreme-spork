@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 16
       - run: cd my-turborepo && npm ci
-      - run: cd my-turborepo && npm run lint && npm run build
+      - run: npm run lint && npm run build
