@@ -26,6 +26,8 @@ jobs:
 
       - name: Authenticate with NPM
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Debug NPM Config
         run: |
