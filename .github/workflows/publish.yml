@@ -27,6 +27,11 @@ jobs:
       - name: Authenticate with NPM
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
+      - name: Debug NPM Config
+        run: |
+          npm config list
+          cat ~/.npmrc
+
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
