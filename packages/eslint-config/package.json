@@ -1,6 +1,6 @@
 {
   "name": "@swapnilsrivastava/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "files": [
     "library.js",

@@ -1,5 +1,11 @@
 # @swapnilsrivastava/library
 
+## 1.0.4
+
+### Patch Changes
+
+- 87c8027: Updating the patch for all the packages
+
 ## 1.0.3
 
 ### Patch Changes
