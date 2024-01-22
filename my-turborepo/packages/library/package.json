@@ -1,21 +1,22 @@
 {
-    "name": "@swapnilsrivastava/library",
-    "version": "1.0.1",
-    "private": false,
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
-    "scripts": {
-        "build": "tsup src/index.ts --format cjs,esm --dts",
-        "dev": "npm run build -- --watch"
-    },
-    "dependencies": {
-        "typescript": "latest"
-    },
-    "devDependencies": {
-        "tsup": "^8.0.1"
-    },
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@swapnilsrivastava/library",
+  "version": "1.0.1",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "dev": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
