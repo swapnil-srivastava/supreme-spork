@@ -1,5 +1,15 @@
 # @swapnilsrivastava/ui
 
+## 2.0.0
+
+### Major Changes
+
+- 8ef7cfb: incrementing
+
+### Minor Changes
+
+- d9916c6: increment the version in this library
+
 ## 1.0.4
 
 ### Patch Changes
