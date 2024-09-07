@@ -1,5 +1,11 @@
 # @swapnilsrivastava/eslint-config
 
+## 1.1.0
+
+### Minor Changes
+
+- d9916c6: increment the version in this library
+
 ## 1.0.4
 
 ### Patch Changes
